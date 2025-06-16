@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/resume_styles.css">
+
+</head>
+<body>
+    <!-- Resume Section -->
+<section id="resume" class="resume-section">
+  <div class="container">
+    <h2>Resume</h2>
+    <p class="section-intro">Here’s a summary of my education, experience, and technical background.</p>
+
+    <!-- Education -->
+    <div class="resume-block">
+      <h3>🎓 Education</h3>
+      <ul>
+        <li>
+          <strong>B.Tech in Computer Science and Engineering (Data Science)</strong><br>
+          Heritage Institute of Technology, Kolkata<br>
+          2021 – 2025 | CGPA: 8.24
+        </li>
+        <li>
+          <strong>Senior Secondary Education (12th - CBSE)</strong><br>
+          British English School, Bihar<br>
+          2019 – 2021 | Score: 84%
+        </li>
+        <li>
+          <strong>Secondary Education (10th - CBSE)</strong><br>
+          Hanshraj Public School, Gaya<br>
+          2019 | Score: 91.16%
+        </li>
+      </ul>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="resume-block">
+      <h3>🛠️ Technical Skills</h3>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> Java, Python, HTML</li>
+        <li><strong>Libraries:</strong> Java Collection, Pandas, Numpy, Matplotlib</li>
+        <li><strong>Database & Cloud:</strong> MySQL, Cloud Computing</li>
+        <li><strong>Coursework:</strong> DSA, OOPs, OS, DBMS</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="resume-block">
+      <h3>📁 Projects</h3>
+      <ul>
+        <li>
+          <strong>Market Basket Analysis</strong><br>
+          Implemented Apriori and FP-Growth algorithms using Python and mlxtend to identify product combinations for marketing strategy.
+        </li>
+        <li>
+          <strong>House Price Prediction</strong><br>
+          Built an ML model using scikit-learn for price prediction and React.js + Bootstrap frontend for real-time user input and output.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Experience -->
+    <div class="resume-block">
+      <h3>💼 Experience</h3>
+      <ul>
+        <li>
+          <strong>Data Science Intern – Celebal Technologies</strong><br>
+          June 2024 – July 2024 (Online)<br>
+          Worked on Python, Pandas, EDA, and built a house price prediction model with 80% accuracy.
+        </li>
+        <li>
+          <strong>Volunteer – Navprayas (NGO)</strong><br>
+          May 2022 – July 2022<br>
+          Organized career counseling events and collaborated with interdisciplinary teams to drive educational initiatives.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Achievements -->
+    <div class="resume-block">
+      <h3>🏆 Achievements</h3>
+      <ul>
+        <li>Solved 200+ problems on LeetCode</li>
+        <li>Scored 80% in NPTEL course: Foundation of Cloud, IoT, and Edge ML</li>
+      </ul>
+    </div>
+
+    <!-- Resume Download -->
+    <div class="resume-download">
+      <a href="{{ url_for('static', filename='Bharat_Kumar_Resume.pdf') }}" download class="download-btn">
+        📄 Download My Resume (PDF)
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

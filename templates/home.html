@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Kumar | Software Developer</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Bharat Kumar</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="{{ url_for('static', filename='resume_bharat_kumar.pdf') }}" download>Resume</a></li>
+            <!-- <li><a href="#resume">Resume</a></li> -->
+
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Bharat Kumar 👋</h1>
+            <h2>A Software Developer passionate about Web & ML</h2>
+            <p>I build modern web applications and machine learning projects using Python, Flask, Java, and React.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+    <!-- About Me Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I'm <strong>Bharat Kumar</strong>, a Computer Science & Engineering graduate with a strong interest in software development, web technologies, and machine learning.
+            I love solving real-world problems through clean, efficient, and scalable code.
+        </p>
+        <p>
+            I have experience building full-stack web applications using <strong>Flask, Java, and React</strong>, and have worked on several machine learning projects involving
+            predictive analytics, classification, and computer vision.
+        </p>
+        <p>
+            I'm continuously learning and enjoy working on innovative projects that challenge me to grow as a developer.
+        </p>
+
+        <h3>Skills</h3>
+        <ul class="skills-list">
+            <li>Python, Flask</li>
+            <li>Java, Object-Oriented Programming</li>
+            <li>React.js, HTML, CSS</li>
+            <li>SQLite, PostgreSQL</li>
+            <li>Machine Learning (Scikit-learn, TensorFlow)</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>🛒 Market Basket Analysis</h3>
+      <p><strong>Tech:</strong> Python, Apriori, Matplotlib</p>
+      <p>
+        Analyzed customer purchase patterns using association rule mining to find frequently bought itemsets. Helped optimize product placement and marketing.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>🌿 Tomato Leaf Disease Detection</h3>
+      <p><strong>Tech:</strong> CNN, TensorFlow, OpenCV, Flask</p>
+      <p>
+        Developed a deep learning model to classify tomato plant diseases from leaf images with 90%+ accuracy. Deployed using Flask for easy access.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>💬 Flask Chat App</h3>
+      <p><strong>Tech:</strong> Flask, Flask-SocketIO, SQLite</p>
+      <p>
+        Built a real-time messaging app with login authentication and persistent message storage using WebSockets.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>📊 Customer Lifetime Value Prediction</h3>
+      <p><strong>Tech:</strong> Python, Pandas, Scikit-learn</p>
+      <p>
+        Predicted customer lifetime value using RFM features and regression models. Clustered users to help businesses target high-value customers.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>🎮 Card Game Turn Order Solver</h3>
+      <p><strong>Tech:</strong> Python, Algorithms</p>
+      <p>
+        Created an algorithm to validate player turn order in a game based on constraints using combinatorics and logic.
+      </p>
+    </div>
+  </div>
+</section>
+
+     <!-- Resume Section
+<section id="resume" class="resume-section">
+  <div class="container">
+    <h2>Resume</h2>
+    <p class="section-intro">Here’s a summary of my education, experience, and technical background.</p>
+
+    // Education
+    <div class="resume-block">
+      <h3>🎓 Education</h3>
+      <ul>
+        <li>
+          <strong>B.Tech in Computer Science and Engineering (Data Science)</strong><br>
+          Heritage Institute of Technology, Kolkata<br>
+          2021 – 2025 | CGPA: 8.24
+        </li>
+        <li>
+          <strong>Senior Secondary Education (12th - CBSE)</strong><br>
+          British English School, Bihar<br>
+          2019 – 2021 | Score: 84%
+        </li>
+        <li>
+          <strong>Secondary Education (10th - CBSE)</strong><br>
+          Hanshraj Public School, Gaya<br>
+          2019 | Score: 91.16%
+        </li>
+      </ul>
+    </div>
+
+    // Technical Skills 
+    <div class="resume-block">
+      <h3>🛠️ Technical Skills</h3>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> Java, Python, HTML</li>
+        <li><strong>Libraries:</strong> Java Collection, Pandas, Numpy, Matplotlib</li>
+        <li><strong>Database & Cloud:</strong> MySQL, Cloud Computing</li>
+        <li><strong>Coursework:</strong> DSA, OOPs, OS, DBMS</li>
+      </ul>
+    </div>
+
+    // Projects 
+    <div class="resume-block">
+      <h3>📁 Projects</h3>
+      <ul>
+        <li>
+          <strong>Market Basket Analysis</strong><br>
+          Implemented Apriori and FP-Growth algorithms using Python and mlxtend to identify product combinations for marketing strategy.
+        </li>
+        <li>
+          <strong>House Price Prediction</strong><br>
+          Built an ML model using scikit-learn for price prediction and React.js + Bootstrap frontend for real-time user input and output.
+        </li>
+      </ul>
+    </div>
+
+    // Experience 
+    <div class="resume-block">
+      <h3>💼 Experience</h3>
+      <ul>
+        <li>
+          <strong>Data Science Intern – Celebal Technologies</strong><br>
+          June 2024 – July 2024 (Online)<br>
+          Worked on Python, Pandas, EDA, and built a house price prediction model with 80% accuracy.
+        </li>
+        <li>
+          <strong>Volunteer – Navprayas (NGO)</strong><br>
+          May 2022 – July 2022<br>
+          Organized career counseling events and collaborated with interdisciplinary teams to drive educational initiatives.
+        </li>
+      </ul>
+    </div>
+
+    // Achievements
+    <div class="resume-block">
+      <h3>🏆 Achievements</h3>
+      <ul>
+        <li>Solved 200+ problems on LeetCode</li>
+        <li>Scored 80% in NPTEL course: Foundation of Cloud, IoT, and Edge ML</li>
+      </ul>
+    </div>
+
+    // Resume Download
+    <div class="resume-download">
+      
+      <a href="{{ url_for('static', filename='resume_bharat_kumar.pdf') }}" download class="download-btn">Download My Resume (PDF)</a>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to send me a message using the form below or reach out via email.</p>
+
+    <form action="/contact" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> arpitbharat0177@gmail.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/ilobeindia" target="_blank">github</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bharat-kumar-ab782524a/" target="_blank">linkedin</a></p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
